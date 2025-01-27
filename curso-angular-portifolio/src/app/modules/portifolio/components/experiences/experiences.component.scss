@@ -15,7 +15,6 @@
         margin-top: 10px;
         background: var(--black-010);
         border-radius: 7px;
-        color: var(--white);
     }
 
     article, summary{
@@ -39,17 +38,15 @@
             flex-direction: column;
             margin: 0;
         }
-    } &[open]{
+    } 
+    &[open]{
         summary{
             &::after{
                 content: url("../../../../../assets/icons/chevron-up.svg");
             }
-            background: var(--primary);
-            border-radius: 7px 7px 0 0 !important;
+            border-radius: 7px 7px 0 0;
         }
-    }
-
-    &:not([open]){
+    } &:not([open]){
         summary{
             &::after{
                 content: url("../../../../../assets/icons/chevron-down.svg");
