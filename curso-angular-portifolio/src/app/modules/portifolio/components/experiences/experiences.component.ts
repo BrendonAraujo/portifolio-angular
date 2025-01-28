@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { IExperience } from '../../interface/IExperience';
 
 @Component({
@@ -9,6 +9,8 @@ import { IExperience } from '../../interface/IExperience';
   styleUrl: './experiences.component.scss'
 })
 export class ExperiencesComponent {
+
+
   public arrayExperiencies = signal<IExperience[]>([
     {
       summary:{
