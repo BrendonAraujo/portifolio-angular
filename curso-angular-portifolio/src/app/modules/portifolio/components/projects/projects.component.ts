@@ -26,7 +26,7 @@ export class ProjectsComponent {
       links: [
         {
           name: 'Know blog',
-          hre: ''
+          href: ''
         }
       ]
     }
