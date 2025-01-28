@@ -16,6 +16,20 @@
         background: var(--black-010);
         border-radius: 7px;
     }
+    &[open]{
+        summary{
+            &::after{
+                content: url("../../../../../assets/icons/chevron-up.svg");
+            }
+            border-radius: 7px 7px 0 0;
+        }
+    } &:not([open]){
+        summary{
+            &::after{
+                content: url("../../../../../assets/icons/chevron-down.svg");
+            }
+        }
+    }
 
     article, summary{
         padding: 10px 20px;
@@ -39,18 +53,5 @@
             margin: 0;
         }
     } 
-    &[open]{
-        summary{
-            &::after{
-                content: url("../../../../../assets/icons/chevron-up.svg");
-            }
-            border-radius: 7px 7px 0 0;
-        }
-    } &:not([open]){
-        summary{
-            &::after{
-                content: url("../../../../../assets/icons/chevron-down.svg");
-            }
-        }
-    }
+    
 }
